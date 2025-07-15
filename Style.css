@@ -1,1 +1,54 @@
+body {
+  font-family: sans-serif;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+}
 
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background: #444;
+}
+
+.cell.win {
+  background-color: #4caf50;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #00adb5;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #00ffff;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
